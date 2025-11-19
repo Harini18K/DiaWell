@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DiaWell</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="input-container">
+
+    <h1>DiaWell</h1>
+    <h3>Early Diabetes Risk Detection</h3>
+
+    <form action="/predict" method="POST" class="form-box">
+
+        <input type="text" name="name" placeholder="Patient Name" required>
+        <input type="number" name="age" placeholder="Age" required>
+        <input type="number" name="glucose" placeholder="Glucose Level" required>
+        <input type="number" name="bloodpressure" placeholder="Blood Pressure" required>
+        <input type="number" name="insulin" placeholder="Insulin" required>
+        <input type="number" step="0.1" name="bmi" placeholder="BMI" required>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <a class="records-link" href="/records">View Patient Records</a>
+
+</div>
+
+</body>
+</html>

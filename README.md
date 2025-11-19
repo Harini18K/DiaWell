@@ -1,2 +1,18 @@
-# DiaWell
-DiaWell is an AI-powered web app that predicts early diabetes risk using a machine learning model. Users enter health details like glucose, BP, insulin, BMI, and age, and the system instantly returns a risk result with probability. It also stores patient records using Flask and SQLite.
+# DiaWell – Diabetes Prediction System
+
+## Setup
+1. Create venv & install requirements:
+   ```
+   pip install -r requirements.txt
+   ```
+2. Train model:
+   ```
+   python model.py
+   ```
+3. Run app:
+   ```
+   python app.py
+   ```
+4. Open http://127.0.0.1:5000/
+
+This version includes `diabetes.csv` dataset.

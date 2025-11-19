@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="result-container">
+
+    <h1>Prediction Result</h1>
+
+    <h2>Hello {{ name }} ,</h2>
+
+    <p class="prediction-text {{ 'risk' if result == 'Diabetes Risk' else 'safe' }}">
+        Your Prediction: <strong>{{ result }}</strong>
+    </p>
+
+    <p class="prob">
+        Probability Score: <strong>{{ probability }}</strong>
+    </p>
+
+    <h3>Entered Details</h3>
+
+    <!-- Simple hyphen list instead of table -->
+    <div class="details-list">
+        <p>- Age: {{ inputs.age }}</p>
+        <p>- Glucose: {{ inputs.glucose }}</p>
+        <p>- Blood Pressure: {{ inputs.bloodpressure }}</p>
+        <p>- Insulin: {{ inputs.insulin }}</p>
+        <p>- BMI: {{ inputs.bmi }}</p>
+    </div>
+
+    <div class="buttons">
+        <a href="/" class="back-btn">Go Back</a>
+        <a href="/records" class="records-btn">View Records</a>
+    </div>
+
+</div>
+
+</body>
+</html>
